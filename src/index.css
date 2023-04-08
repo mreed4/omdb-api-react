@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +9,7 @@ body {
   min-height: 100vh;
   margin: 0;
   background-color: gold;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav {
@@ -37,6 +40,7 @@ nav > div > ol > li {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.3em 1em;
 }
 
 nav a {
@@ -44,11 +48,38 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.3em 1em;
+  padding-bottom: 6px;
+  color: inherit;
+  border-bottom: 2px solid transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+nav a:visited,
+nav a:active {
+  color: inherit;
 }
 
 section {
   padding: 0 1em;
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  display: none;
 }
 
 .orange {
@@ -63,6 +94,11 @@ section {
   background-color: hsl(194, 66%, 61%);
 }
 
-.active {
+nav .active {
   font-weight: bold;
+  border-bottom-color: hsla(0, 0%, 0%, 0.2);
+}
+
+.small {
+  font-size: 0.75em;
 }
