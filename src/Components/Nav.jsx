@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useContext } from "react";
 import { AppContext } from "./AppContext";
 
@@ -9,7 +9,9 @@ export default function Nav() {
     <nav>
       <ol>
         <li>
-          <NavLink to="/">OMDb API</NavLink>
+          <Link to="/" className="logo">
+            OMDb API
+          </Link>
         </li>
         <li>
           <NavLink to="/demo" className={getClassName}>
