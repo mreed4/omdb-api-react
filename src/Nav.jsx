@@ -44,7 +44,9 @@ export default function Nav() {
       <div className="nav-items-secondary">
         <ol>
           <li>
-            <a href="https://www.patreon.com/join/omdb">Become a Patron</a>
+            <a href="https://www.patreon.com/join/omdb">
+              Patreon <i class="fa-solid fa-arrow-up-right-from-square small"></i>
+            </a>
           </li>
           <li>
             <NavLink to="/donate" className={getClassName}>
