@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
-
 export default function DonatePage() {
   return (
-    <section>
+    <section id="donate">
       <h1>Donate</h1>
+      <hr />
     </section>
   );
 }

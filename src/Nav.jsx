@@ -10,15 +10,18 @@ export default function Nav() {
         <ol>
           <li>
             <Link to="/usage">Usage</Link>
+            <Link to="/parameters">Parameters</Link>
+            <Link to="/examples">Examples</Link>
+            <Link to="/change-log">Change Log</Link>
           </li>
         </ol>
       </div>
       <div className="nav-items-secondary">
         <ol>
-          <li>
+          <li className="orange">
             <a href="https://www.patreon.com/join/omdb">Become a Patron</a>
           </li>
-          <li>
+          <li className="green">
             <Link to="/donate">Donate</Link>
           </li>
         </ol>
