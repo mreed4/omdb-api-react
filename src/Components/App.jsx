@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AppProvider } from "./AppContext";
 import Nav from "./Nav";
-import Home from "./Home";
-import DocsPage from "./DocsPage";
-import DonatePage from "./DonatePage";
-import DemoPage from "./DemoPage";
-import ConnectPage from "./ConnectPage";
-import DashboardPage from "./DashboardPage";
+import Home from "./Pages/Home";
+import DocsPage from "./Pages/DocsPage";
+import DonatePage from "./Pages/DonatePage";
+import DemoPage from "./Pages/DemoPage";
+import ConnectPage from "./Pages/ConnectPage";
+import DashboardPage from "./Pages/DashboardPage";
 // import "./App.css";
 
 function App() {

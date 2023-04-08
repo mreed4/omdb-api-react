@@ -1,8 +1,8 @@
-export default function ParametersPage() {
+export default function Parameters() {
   return (
     <div id="docs-parameters">
       <h2>Parameters</h2>
-      <hr />
+      <hr className="hr-thin" />
       <h3>By ID or Title</h3>
       <table>
         <thead>
@@ -90,7 +90,7 @@ export default function ParametersPage() {
         </tbody>
       </table>
       <span>* Please note while both "i" and "t" are optional at least one argument is required.</span>
-      <hr />
+      <hr className="hr-thin" />
       <h3>By Search</h3>
       <table className="">
         <thead>

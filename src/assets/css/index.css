@@ -19,12 +19,7 @@ nav {
   height: 3em;
 }
 
-nav > div {
-  display: flex;
-  align-items: center;
-}
-
-nav > div > ol {
+nav > ol {
   display: flex;
   /* align-items: center; */
   list-style: none;
@@ -32,11 +27,7 @@ nav > div > ol {
   margin: 0;
 }
 
-nav > div:last-child > ol {
-  flex-direction: row-reverse;
-}
-
-nav > div > ol > li {
+nav > ol > li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,10 +51,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-}
-
-h1 {
-  font-size: 2em;
+  /* margin: 0; */
 }
 
 nav a:visited,
@@ -72,14 +60,42 @@ nav a:active {
 }
 
 section {
-  padding: 0 1em;
+  padding: 2em 1em 0;
+}
+
+section h1 {
+  font-size: 4em;
+}
+
+section h2 {
+  font-size: 2em;
 }
 
 hr {
   border: 0;
-  height: 3px;
+  height: 4px;
   background-color: hsla(0, 0%, 0%, 0.2);
   display: none;
+
+  margin-bottom: 6em;
+}
+
+.hr-thin {
+  height: 2px;
+  margin-bottom: 1em;
+  /* display: block; */
+}
+
+#lead {
+  display: flex;
+}
+
+#poster-api {
+  display: flex;
+}
+
+#poster-api h2 {
+  margin: 0;
 }
 
 .orange {
@@ -101,4 +117,8 @@ nav .active {
 
 .small {
   font-size: 0.75em;
+}
+
+.tagline {
+  font-size: 2em;
 }
