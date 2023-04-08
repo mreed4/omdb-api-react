@@ -14,29 +14,20 @@ export default function Nav() {
               OMDb API
             </NavLink>
           </li>
+
           <li>
-            <NavLink to="/usage" className={getClassName}>
-              Usage
+            <NavLink to="/demo" className={getClassName}>
+              Demo
             </NavLink>
           </li>
           <li>
-            <NavLink to="/parameters" className={getClassName}>
-              Parameters
+            <NavLink to="/docs" className={getClassName}>
+              Docs
             </NavLink>
           </li>
           <li>
-            <NavLink to="/examples" className={getClassName}>
-              Examples
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/change-log" className={getClassName}>
-              Change Log
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/api" className={getClassName}>
-              API
+            <NavLink to="/dashboard" className={getClassName}>
+              Dashboard
             </NavLink>
           </li>
         </ol>
@@ -44,18 +35,13 @@ export default function Nav() {
       <div className="nav-items-secondary">
         <ol>
           <li>
-            <a href="https://www.patreon.com/join/omdb">
-              Patreon <i class="fa-solid fa-arrow-up-right-from-square small"></i>
-            </a>
-          </li>
-          <li>
             <NavLink to="/donate" className={getClassName}>
               Donate
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className={getClassName}>
-              Contact
+            <NavLink to="/connect" className={getClassName}>
+              Connect
             </NavLink>
           </li>
         </ol>

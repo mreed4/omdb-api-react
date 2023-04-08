@@ -1,6 +1,6 @@
 export default function ParametersPage() {
   return (
-    <section id="parameters">
+    <div id="docs-parameters">
       <h1>Parameters</h1>
       <hr />
       <h2>By ID or Title</h2>
@@ -170,6 +170,6 @@ export default function ParametersPage() {
           </tr>
         </tbody>
       </table>
-    </section>
+    </div>
   );
 }

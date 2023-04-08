@@ -2,13 +2,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AppProvider } from "./AppContext";
 import Nav from "./Nav";
 import Home from "./Home";
-import UsagePage from "./UsagePage";
+import DocsPage from "./DocsPage";
 import DonatePage from "./DonatePage";
-import ParametersPage from "./ParametersPage";
-import ExamplesPage from "./ExamplesPage";
-import ChangeLogPage from "./ChangeLogPage";
-import ContactPage from "./ContactPage";
-import ApiPage from "./ApiPage";
+import DemoPage from "./DemoPage";
+import ConnectPage from "./ConnectPage";
+import DashboardPage from "./DashboardPage";
 // import "./App.css";
 
 function App() {
@@ -21,13 +19,11 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/usage" element={<UsagePage />} />
-            <Route path="/parameters" element={<ParametersPage />} />
-            <Route path="/examples" element={<ExamplesPage />} />
-            <Route path="/change-log" element={<ChangeLogPage />} />
-            <Route path="/api" element={<ApiPage />} />
+            <Route path="/docs" element={<DocsPage />} />
+            <Route path="/demo" element={<DemoPage />} />
+            <Route path="/dashboard" element={<DashboardPage />} />
             <Route path="/donate" element={<DonatePage />}></Route>
-            <Route path="/contact" element={<ContactPage />}></Route>
+            <Route path="/connect" element={<ConnectPage />}></Route>
           </Routes>
         </main>
       </Router>

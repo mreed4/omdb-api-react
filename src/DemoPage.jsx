@@ -1,7 +1,7 @@
-export default function ExamplesPage() {
+export default function DemoPage() {
   return (
-    <section id="examples">
-      <h1>Examples</h1>
+    <section id="demo">
+      <h1>Demo</h1>
       <hr />
       <h2>By Title</h2>
       <form className="well form-search" id="search-by-title-form">
