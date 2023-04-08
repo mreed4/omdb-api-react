@@ -1,11 +1,15 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
 
 const AppContext = createContext();
 
 function AppProvider({ children }) {
-  const [state, setState] = useState({});
+  function getClassName({ isActive }) {
+    return isActive ? "active" : "";
+  }
 
-  return <AppContext.Provider value={{ state, setState }}>{children}</AppContext.Provider>;
+  const value = { getClassName };
+
+  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
 
 export { AppContext, AppProvider };
