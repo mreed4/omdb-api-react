@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <section id="home">
       <div className="lead">
-        <div class="description">
+        <div className="description">
           <h1>OMDb API</h1>
           <h2>The Open Movie Database</h2>
           <p>
