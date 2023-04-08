@@ -1,28 +1,60 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { AppContext } from "./AppContext";
 
 export default function Nav() {
+  const { getClassName } = useContext(AppContext);
+
   return (
     <nav>
       <div className="nav-items-primary">
-        <span className="site-name">
-          <Link to="/">OMDb API</Link>
-        </span>
         <ol>
           <li>
-            <Link to="/usage">Usage</Link>
-            <Link to="/parameters">Parameters</Link>
-            <Link to="/examples">Examples</Link>
-            <Link to="/change-log">Change Log</Link>
+            <NavLink to="/" className={getClassName}>
+              OMDb API
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/usage" className={getClassName}>
+              Usage
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/parameters" className={getClassName}>
+              Parameters
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/examples" className={getClassName}>
+              Examples
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/change-log" className={getClassName}>
+              Change Log
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/api" className={getClassName}>
+              API
+            </NavLink>
           </li>
         </ol>
       </div>
       <div className="nav-items-secondary">
         <ol>
-          <li className="orange">
+          <li>
             <a href="https://www.patreon.com/join/omdb">Become a Patron</a>
           </li>
-          <li className="green">
-            <Link to="/donate">Donate</Link>
+          <li>
+            <NavLink to="/donate" className={getClassName}>
+              Donate
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className={getClassName}>
+              Contact
+            </NavLink>
           </li>
         </ol>
       </div>
