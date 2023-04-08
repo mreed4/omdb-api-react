@@ -4,7 +4,7 @@ export default function ExamplesPage() {
       <h1>Examples</h1>
       <hr />
       <h2>By Title</h2>
-      <form class="well form-search" id="search-by-title-form" onsubmit="return false;">
+      <form className="well form-search" id="search-by-title-form">
         <div>
           <label for="t">Title:</label>
           <input type="text" id="t" name="t" />
