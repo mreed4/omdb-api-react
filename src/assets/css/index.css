@@ -81,7 +81,6 @@ nav a.logo {
   padding-bottom: 0;
   border: 0;
   padding: 0.5em;
-  border-radius: 5px;
 }
 
 nav a.logo:hover {
@@ -171,7 +170,6 @@ hr {
   height: 4px;
   background-color: hsla(0, 0%, 0%, 0.2);
   display: none;
-
   margin-bottom: 6em;
 }
 
@@ -186,6 +184,26 @@ footer > ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60em;
+  margin: 1em 0;
+}
+
+tr {
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+}
+
+tr:last-child {
+  border-bottom: 0;
+}
+
+thead th {
+  font-weight: 600;
+  text-align: left;
+  padding: 0.5em 0;
 }
 
 #main-content {
@@ -254,4 +272,13 @@ nav .active {
   100% {
     opacity: 1;
   }
+}
+
+.label {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
 }
