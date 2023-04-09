@@ -89,7 +89,7 @@ export default function Parameters() {
           </tr>
         </tbody>
       </table>
-      <span>* Please note while both "i" and "t" are optional at least one argument is required.</span>
+      <p className="small italic">* Please note while both "i" and "t" are optional at least one argument is required.</p>
       <hr className="hr-thin" />
       <h3>By Search</h3>
       <table className="">
