@@ -11,7 +11,12 @@
   line-height: 1.5;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
-  color: hsla(0, 0%, 0%, 0.85);
+
+  color-scheme: light dark;
+
+  background-color: hsl(0, 0%, 18%);
+  color: hsla(0, 0%, 100%, 0.7);
+  background-attachment: fixed;
 }
 
 * {
@@ -26,8 +31,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  background: radial-gradient(#fff346, #e5b63b);
-  background-attachment: fixed;
 }
 
 section {
@@ -76,7 +79,7 @@ nav a:hover {
 
 nav a.logo {
   font-weight: 600;
-  background: linear-gradient(black, #222);
+  background-color: black;
   color: white !important;
   padding-bottom: 0;
   border: 0;
@@ -140,11 +143,11 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  color: black;
 }
 
 h1 {
   font-size: 3.5em;
+  color: #e5b63b;
 }
 
 section#home h1 {
@@ -193,7 +196,7 @@ table {
 }
 
 tr {
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+  border-bottom: 1px solid hsla(0, 0%, 80%, 0.1);
 }
 
 tr:last-child {
@@ -233,7 +236,7 @@ thead th {
 
 nav .active {
   font-weight: 600;
-  border-bottom-color: hsla(0, 0%, 0%, 0.2);
+  border-bottom-color: #e5b63b;
 }
 
 .small {
@@ -246,7 +249,7 @@ nav .active {
 
 .tagline {
   font-size: 2.5em;
-  color: hsla(0, 0%, 0%, 0.5);
+  color: hsla(0, 0%, 100%, 0.9);
 }
 
 .hr-thin {
@@ -281,4 +284,41 @@ nav .active {
   font-weight: 600;
   margin-right: 0.5em;
   margin-bottom: 0.5em;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: hsla(0, 0%, 0%, 0.85);
+    background: radial-gradient(#fff346, #e5b63b);
+  }
+
+  hr {
+    background-color: hsla(0, 0%, 0%, 0.7);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black;
+  }
+
+  nav .active {
+    color: inherit;
+    border-bottom-color: hsla(0, 0%, 0%, 0.2);
+  }
+
+  nav a.logo {
+    background: linear-gradient(black, #222);
+  }
+
+  tr {
+    border-bottom-color: hsla(0, 0%, 0%, 0.1);
+  }
+
+  .tagline {
+    color: hsla(0, 0%, 0%, 0.5);
+  }
 }
