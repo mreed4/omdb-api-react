@@ -138,10 +138,7 @@ nav > ol > li {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-weight: normal;
 }
 
@@ -154,6 +151,11 @@ section#home h1 {
   font-size: 4em;
   margin: 1.5em 0 0.5em;
   font-weight: 600;
+}
+
+h2,
+h3 {
+  color: white;
 }
 
 h2 {
@@ -268,6 +270,16 @@ nav .active {
   font-size: 1em;
 }
 
+.label {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 @keyframes section-fader {
   0% {
     opacity: 0;
@@ -275,15 +287,6 @@ nav .active {
   100% {
     opacity: 1;
   }
-}
-
-.label {
-  display: inline-block;
-  padding: 0.2em 0.5em;
-  font-size: 0.8em;
-  font-weight: 600;
-  margin-right: 0.5em;
-  margin-bottom: 0.5em;
 }
 
 @media (prefers-color-scheme: light) {
@@ -298,10 +301,7 @@ nav .active {
 
   h1,
   h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h3 {
     color: black;
   }
 
