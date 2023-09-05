@@ -1,42 +1,28 @@
 import { NavLink, Link } from "react-router-dom";
-import { useContext } from "react";
-import { AppContext } from "./AppContext";
 
 export default function Nav() {
-  const { getClassName } = useContext(AppContext);
-
   return (
     <nav>
       <ol>
         <li>
-          <Link to="/" className="logo">
+          <NavLink to="/" className="logo">
             OMDb API
-          </Link>
-        </li>
-        <li>
-          <NavLink to="/demo" className={getClassName}>
-            Demo
           </NavLink>
         </li>
         <li>
-          <NavLink to="/docs" className={getClassName}>
-            Docs
-          </NavLink>
+          <NavLink to="demo">Demo</NavLink>
         </li>
         <li>
-          <NavLink to="/dashboard" className={getClassName}>
-            Dashboard
-          </NavLink>
+          <NavLink to="docs">Docs</NavLink>
         </li>
         <li>
-          <NavLink to="/donate" className={getClassName}>
-            Donate
-          </NavLink>
+          <NavLink to="dashboard">Dashboard</NavLink>
         </li>
         <li>
-          <NavLink to="/connect" className={getClassName}>
-            Connect
-          </NavLink>
+          <NavLink to="donate">Donate</NavLink>
+        </li>
+        <li>
+          <NavLink to="connect">Connect</NavLink>
         </li>
       </ol>
     </nav>

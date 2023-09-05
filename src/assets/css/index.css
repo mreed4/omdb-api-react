@@ -17,6 +17,7 @@
   background-color: hsl(0, 0%, 18%);
   color: hsla(0, 0%, 100%, 0.7);
   background-attachment: fixed;
+  transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
 }
 
 * {
@@ -39,6 +40,44 @@ section {
   animation: section-fader 100ms ease-in-out;
 }
 
+input,
+select {
+  font-size: 1em;
+  padding: 0.5em;
+  border: 2px solid hsla(0, 0%, 0%, 0.2);
+  background-color: hsla(0, 0%, 0%, 0.1);
+  color: inherit;
+  border-radius: 4px;
+  transition: border-color 100ms ease-in-out;
+  outline: none;
+}
+
+input {
+  border-width: 0 0 2px 0;
+}
+
+input:focus,
+select:focus {
+  border-color: hsla(0, 0%, 0%, 0.4);
+}
+
+label + input,
+label + select {
+  display: block;
+}
+
+button {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: 2px solid hsla(0, 0%, 0%, 0.2);
+  background-color: hsla(0, 0%, 0%, 0.1);
+  color: inherit;
+  border-radius: 4px;
+  transition: border-color 100ms ease-in-out;
+  outline: none;
+  cursor: pointer;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -51,7 +90,7 @@ a:active {
 
 p a {
   text-underline-offset: 4px;
-  text-decoration-color: hsla(0, 0%, 100%, 0.4) !important;
+  text-decoration-color: hsla(0, 0%, 0%, 0.4) !important;
   text-decoration-thickness: 2px !important;
   text-decoration: underline;
   text-decoration-style: wavy;
@@ -147,7 +186,7 @@ h1 {
   color: #e5b63b;
 }
 
-section#home h1 {
+section#StartPage h1 {
   font-size: 4em;
   margin: 1.5em 0 0.5em;
   font-weight: 600;
@@ -236,6 +275,10 @@ thead th {
   background-color: hsl(194, 66%, 61%);
 }
 
+.red {
+  background-color: hsl(0, 100%, 50%);
+}
+
 nav .active {
   font-weight: 600;
   border-bottom-color: #e5b63b;
@@ -292,7 +335,7 @@ nav .active {
 @media (prefers-color-scheme: light) {
   :root {
     color: hsla(0, 0%, 0%, 0.85);
-    background: radial-gradient(#fff346, #e5b63b);
+    background-color: #fff346;
   }
 
   hr {

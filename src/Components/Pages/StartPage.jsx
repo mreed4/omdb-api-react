@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function StartPage() {
   return (
-    <section id="home">
+    <section id="StartPage">
       <div>
         <h1>OMDb API</h1>
         <p className="tagline">The Open Movie Database</p>
@@ -11,7 +11,7 @@ export default function Home() {
           maintained by our users.
         </p>
         <p>
-          If you find this service useful, please consider making a <Link to="/donate">one-time donation</Link> or become a patron.
+          If you find this service useful, please consider making a <Link to="donate">one-time donation</Link> or become a patron.
         </p>
         {/* <p className="small italic">This site is not endorsed by or affiliated with IMDb.com.</p> */}
       </div>
